@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Unsplash It</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400" rel="stylesheet">
+
+  <!-- Cutsom CSS -->
+  <link rel="stylesheet" href="./Unsplash.css">
+</head>
+<body>
+
+  <!-- Header section -->
+  <div class="introHeader">
+    <div class="headerContainer">
+        <h1>Unsplash It</h1>
+        <h3>Beautiful placeholders using images from <a class="headerLink" href="https://unsplash.com">unsplash</a></h3>
+    </div>
+  </div>
+
+  <!--  Body section -->
+  <div class="grayBg">
+    <div class="content-container">
+      <div class="col-6 bordr">
+        <div class="content">
+          <h2>Basic Usage</h2>
+          <p>Just put your image size (width & height) after our URL and you'll get a placeholder.</p>
+          <code>https://unsplash.it/200/300</code>
+          <p>To get a square image, just put the size you want.</p>
+          <code>https://unsplash.it/200</code>
+        </div>
+      </div>
+      <div class="col-6 bordr">
+        <div class="image" id="image1">
+          <img src="./images/image1.jpg" width="450px">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-container">
+    <div class="col-6 bordr">
+      <div class="image" id="image2"></div>
+        <img src="./images/image2.jpg" width="450px">
+    </div>
+    <div class="col-6 bordr">
+      <div class="content">
+        <h2>Random Image</h2>
+        <p>Get a random image by appending <span class="redSpan">?random</span> to the end of the url.</p>
+        <code>https://unsplash.it/200/300?random</code>
+      </div>
+    </div>
+  </div>
+
+  <div class="grayBg">
+    <div class="content-container">
+      <div class="col-6 bordr">
+        <div class="content">
+          <h2>Grayscale</h2>
+          <p>Use the <span class="redSpan">/g/</span> path to greyscale the image.</p>
+          <code>https://unsplash.it/g/200/300</code>
+        </div>
+      </div>
+      <div class="col-6 bordr">
+        <div class="image" id="image3"></div>
+          <img src="./images/image3.jpg" width="450px">
+      </div>
+    </div>
+  </div>
+
+  <div class="content-container"> 
+    <div class="col-6 bordr">
+      <pre>
+      <code class="image">
+[
+    {
+        "format": "jpeg",
+        "width": 5616,
+        "height": 3744,
+        "filename": "51492538696.jpg",
+        "id": 0,
+        "author": "Alejandro Escamilla",
+        "author_url": "https://alejandroescamilla.com/",
+        "post_url": "https://unsplash.com/post/51492538696/
+                     download-by-alejandro-escamilla"
+    }
+]
+      </code>
+    </pre>
+    </div>
+    <div class="col-6 bordr">
+      <div class="content">
+        <h2>List Images</h2>
+        <p>Get a list of images by using the <span class="redSpan">/list</span> endpoint.</p>
+        <code>https://unsplash.it/list</code>
+      </div>
+    </div>
+  </div>
+
+  <div class="grayBg">
+    <div class="content-container">
+      <div class="col-6 bordr">
+        <div class="content">
+          <h2>Specific Image</h2>
+          <p>Get a specific image by appending <span class="redSpan">?image</span> to the end of the url.</p>
+          <code>https://unsplash.it/200/300?image=0</code>
+          <span class="subText">You can find a list of all images <a class="headerLink" href="https://unsplash.it/images">here.</a class="headerLink"></span>
+        </div>
+      </div>
+      <div class="col-6 bordr">
+        <div class="image" id="image4"></div>
+          <img src="./images/image3.jpg" width="450px">
+      </div>
+    </div>
+  </div>
+
+  <div class="content-container">
+    <div class="col-6 bordr">
+      <div class="image" id="image5"></div>
+        <img src="./images/image5.jpg" width="450px">
+    </div>
+    <div class="col-6 bordr">
+      <div class="content">
+        <h2>Blurred Image</h2>
+        <p>Get a blurred image by appending <span class="redSpan">?blur</span> to the end of the url.</p>
+        <code>https://unsplash.it/200/300/?blur</code>
+      </div>
+    </div>
+  </div>
+
+  <div class="grayBg">
+    <div class="content-container">
+      <div class="col-6 bordr">
+        <div class="content">
+          <h2>Crop Gravity</h2>
+          <p>Select the cropping gravity by adding <span class="redSpan">?gravity</span> to the end of the url.</p>
+          <p style="font-size: 14px;">Valid options are: <span class="redSpan optionsSpan">north, east, south, west, center</span></p>
+          <code>https://unsplash.it/200/300/?gravity=east</code>
+        </div>
+      </div>
+      <div class="col-6 bordr">
+        <div class="image" id="image6"></div>
+          <img src="./images/image6.jpg" width="450px">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

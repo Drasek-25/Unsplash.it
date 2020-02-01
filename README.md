@@ -1,0 +1,1 @@
+This was my third lab at redwood code academy. We were provided the .html and told to build the css using the actual site as a reference. Since this lab was originally created the url unsplash.it redirects to lorem ipsum, which made the lab impossible, however I was able to use wayback machine to succesfully find a cache of the original website from when the lab was created.
